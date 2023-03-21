@@ -10,7 +10,7 @@ public class Ex03_Student extends Ex02_Person {
 		this.info = info;
 		this.java = java;
 		this.html = html;
-		this.sum = java + html;
+		this.sum = this.java + this.html;
 	}
 
 	public String getInfo() {

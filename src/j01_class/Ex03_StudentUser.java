@@ -14,21 +14,21 @@ public class Ex03_StudentUser {
 		
 
 		Ex03_Student[] ar = new Ex03_Student[] { st1, st2, st3, st4, st5};
-		Ex03_Student[] t = new Ex03_Student[1];
+//		Ex03_Student[] t = new Ex03_Student[1];
 		
 		for(int i = 0 ; i < ar.length - 1; i++) {
 			for(int j = i + 1; j < ar.length; j++ ) {
 				if(ar[i].getSum() < ar[j].getSum() ) {
-					t[0] = ar[i];
+					Ex03_Student temp = ar[i];
 					ar[i] = ar[j];
-					ar[j] = t[0];
+					ar[j] = temp;
 				}
 			}
 		}
 		
 		for(Ex03_Student i : ar) {
-			count++;
-			System.out.println("출력 번호 : " + count);
+			
+			System.out.println("출력 번호 : " + ++count);
 			System.out.println(i);
 		}
 		
