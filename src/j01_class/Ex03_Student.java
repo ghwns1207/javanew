@@ -4,6 +4,8 @@ public class Ex03_Student extends Ex02_Person {
 
 	private String info;
 	private int java, html, sum;
+	
+	public Ex03_Car car = new Ex03_Car();
 
 	Ex03_Student(String name , String phone ,String info,int age ,int java ,int html) {
 		super(name, phone,age);
@@ -12,6 +14,9 @@ public class Ex03_Student extends Ex02_Person {
 		this.html = html;
 		this.sum = this.java + this.html;
 	}
+	
+	Ex03_Student(){ }
+	
 
 	public String getInfo() {
 		return info;

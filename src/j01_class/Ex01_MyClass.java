@@ -6,7 +6,7 @@ public class Ex01_MyClass {
 	// => 변수(속성/필드) 메서드/동작(main, 생성자, getter/setter, toString(), ...) 
 	// => 멤버 (Global, 클래스 외부에서 접근 가능 ) / 지역 (local, 정의된 지역 범위내에서만 접근가능)
 	
-	// 접근제어자 : public 프로젝트 > protected 패키지 + 상속 > default 패키지 내부  > private 클래스 내부
+	// 접근제어자 : public 프로젝트 > protected 패키지 + 상속 > default 패키지 내부  > private 클래스 내부 캡슐화
 	// => private : 메서드를 통해 접근 (setter/getter) 
 	
 	//static 정적 클래스 변수 /non_static 동적 ,인스턴스 변수  
