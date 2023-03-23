@@ -20,7 +20,7 @@ interface NewInter {
 	// ** default 
 	// => 인터페이스에만 허용, 오버라이딩 의무는 없으나 필요시 가능함
 	//default void defaultTest(); // => ERROR
-	default void defaultTest() {
+	default void defaultTest() {		// 비정적 메서드에는 디폴트 
 		System.out.println("** interface : defaultTest() **");
 	}
 } //NewInter
@@ -36,18 +36,18 @@ class NewTest implements NewInter {
 	@Override
 	public void defaultTest() {
 		// => 조상이 interface 인경우 접근방법
-		NewInter.super.defaultTest();
+		NewInter.super.defaultTest();				// 구현 인터페이스 명 . super. 사용 
 		System.out.println("** NewTest : defaultTest() 오버라이드 **");
 	}
-	public void defaultTest(int i) {
+	public void defaultTest(int i) {			// 재정의 가능 
 		System.out.println("** NewTest : defaultTest() 오버로드, i => "+i);
 	}
 	
-	// ** static
+	// ** static    오버라이딩 의미가 없음 
 	// => 클래스 또는 인터페이스 종속이므로 동일 메서드명 허용됨
 	//    static 또는 인스턴스 메서드 모두 가능
 	//   ( 비교: 조상이 클래스인 경우에는 인스턴스 메서드는 불가능 ) 
-	static void staticTest() {
+	static void staticTest() {				// 인터페이스의 스텍틱과는 다른 메서드 
 	//void staticTest() {
 		System.out.println("** NewTest : staticTest() **");
 	}

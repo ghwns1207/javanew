@@ -79,9 +79,10 @@ public class Ex06_classCasting {
 		 // Test3. Down_Casting -> 명시적으로
 		System.out.println("** Down_Casting Test **");
 		// an1.legsPrint(10); => 불가능
-		PetAnimal cat=null ;
-		cat = (PetAnimal)an1; 
-		cat.legsPrint(10);
+		PetAnimal cat=null ;	// String name = null;
+		cat = (PetAnimal)an1; 	// an1 과 an2 비교 
+		cat.legsPrint(10);		// => 생성시 사용한 생성자에 따라 다운 캐스팅이 가능 또는 불가능 하다 
+								// => PetAnimal로 생성한 an1 은 가능 , Animal2로 생성한 an2 는 불가능 
 		
 		dog = (PetAnimal)an1; // 컴파일오류, 런타임오류 없음 -> 명시적 Down_Casting 가능
 		dog.legsPrint(4);     // dog는 PetAnimal 에 정의된 맴버 접근가능
