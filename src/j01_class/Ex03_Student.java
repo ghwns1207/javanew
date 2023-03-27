@@ -7,7 +7,7 @@ public class Ex03_Student extends Ex02_Person {
 	
 	public Ex03_Car car = new Ex03_Car();
 
-	Ex03_Student(String name , String phone ,String info,int age ,int java ,int html) {
+	public Ex03_Student(String name , String phone ,String info,int age ,int java ,int html) {
 		super(name, phone,age);
 		this.info = info;
 		this.java = java;
@@ -15,7 +15,7 @@ public class Ex03_Student extends Ex02_Person {
 		this.sum = this.java + this.html;
 	}
 	
-	Ex03_Student(){ }
+	public Ex03_Student(){ }
 	
 
 	public String getInfo() {
